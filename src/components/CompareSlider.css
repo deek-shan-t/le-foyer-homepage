@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+/* For the whole section */
+.CompareSliderSection{
+    margin-top: 1%;
+    width: 100%;
+    display: grid;
+}
+
+/* For the headline on the top of the seciton */
+.sliderHead{
+    display: grid;
+    justify-self: center;
+}
+
+/* For the larger heading */
+.SliderSectionTopHeading{
+    color: #A17A47;
+    justify-self: center;
+}
+
+/* For the sub heading */
+.SliderSectionSubHeading{
+    color: #ECBA68;
+    justify-self: center;
+    margin-top: 3px;
+}
+
+/* For the Title Bar of different projects */
+.SliderProjectTitleBar{
+    background-color: #F4EADF;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3%;
+    font-size: 30px;
+    padding: 10px 0px 10px 0px;
+    color:#A17A47;
+    cursor: pointer;
+}
+
+/* For the Comparison Slider */
+.ComparisonSliderCont{
+    width: 100%;
+    display: grid;
+}
+
+/* Adjusting the width of the slider and bringing it into center */
+.ComparisonSlider{
+    width: 50%;
+    margin-top: 1.5%;
+    justify-self: center;
+}
+
+/* Adjusting the widths and heights of the images so as to fill the slider */
+/* NOTE: Changing units can have unknown effects because it is used in an imported component */
+.compImages{
+    width: 100%;
+    height: 550px;
+}
+
+/* Styling the button at the bottom */
+.SliderBottomButton{
+    width: 30%;
+    padding: 12px 8px 12px 8px;
+    margin-top: 1%;
+    justify-self: center;
+    background-color: #B99F85;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    font-size: x-large;
+    color: white;
+    font-weight: bold;
+}
