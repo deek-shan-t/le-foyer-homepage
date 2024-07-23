@@ -25,11 +25,11 @@ function CompareSlider() {
       {/* Project title bar */}
       <div className='SliderProjectTitleBar'>
         {ProjectTitles.map((title, index) => (
-          <div key={index + 1} onClick={() => { setProjectNumber(index + 1) }}>{title}</div>
+          <div className="ProjectTItles" key={index + 1} onClick={() => { setProjectNumber(index + 1) }}>{title}</div>
         ))}
 
         {/* TODO: Insert the Link Here for navigating the user to the gallery */}
-        <div>Explore More+</div>
+        <div style={{marginLeft:'10px', marginRight:'10px'}}>Explore More+</div>
       </div>
 
       {/* Comparison Slider */}
