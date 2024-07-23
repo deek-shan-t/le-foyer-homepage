@@ -2,24 +2,20 @@ import React from 'react'
 import './DesignQuiz.css'
 import { useState, useEffect } from 'react'
 import ModalLoginForm from './ModalLoginForm';
+import { motion } from 'framer-motion'
 function DesignQuiz() {
     const [q_index, setQIndex] = useState(0);
     const left_image_resource = ["https://images.pexels.com/photos/2883049/pexels-photo-2883049.jpeg?auto=compress&cs=tinysrgb&w=600", "https://images.pexels.com/photos/2251247/pexels-photo-2251247.jpeg?auto=compress&cs=tinysrgb&w=600", "https://images.pexels.com/photos/5644353/pexels-photo-5644353.jpeg?auto=compress&cs=tinysrgb&w=600", "https://images.pexels.com/photos/23916863/pexels-photo-23916863/free-photo-of-luxury-interior-design.png?auto=compress&cs=tinysrgb&w=600", "https://images.pexels.com/photos/23916869/pexels-photo-23916869/free-photo-of-interior-design-of-luxury-living-room.png?auto=compress&cs=tinysrgb&w=600", "https://images.pexels.com/photos/23916837/pexels-photo-23916837/free-photo-of-pool-in-house.png?auto=compress&cs=tinysrgb&w=600"];
     const right_image_resource = ["https://images.pexels.com/photos/23119651/pexels-photo-23119651/free-photo-of-interior-design-of-a-house.jpeg?auto=compress&cs=tinysrgb&w=600", "https://images.pexels.com/photos/6480707/pexels-photo-6480707.jpeg?auto=compress&cs=tinysrgb&w=600", "https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=600", "https://images.pexels.com/photos/210547/pexels-photo-210547.jpeg?auto=compress&cs=tinysrgb&w=600", "https://images.pexels.com/photos/2635038/pexels-photo-2635038.jpeg?auto=compress&cs=tinysrgb&w=600", "https://images.pexels.com/photos/3797991/pexels-photo-3797991.jpeg?auto=compress&cs=tinysrgb&w=600"]
     const [choices, setChoices] = useState(Array(left_image_resource.length).fill(0))
-    const [loginEnable,setLoginEnable] = useState(0);
-    useEffect(() => {
-        if (q_index >= choices.length) {
-            setQIndex(choices.length-1);
-            setLoginEnable(1);
-        }
-    }, [q_index,choices])
-
-    const onCancel = ()=>{setLoginEnable(0);setQIndex(0)}
+    const [loginEnable, setLoginEnable] = useState(0);
+    useEffect(()=>{
+        if (q_index >= choices.length){setQIndex(0);setLoginEnable(1);}
+    }, [q_index, choices])
+    const onCancel = () => { setLoginEnable(0); setQIndex(0) }
     const option_select = (choice) => {
         setChoices((prev) => (prev.map((curr, ind) => ind === q_index ? choice : curr)))
     }
-
     const bg_image_option = (choice, index) => {
         if (choice === 0) {
             return "https://i.pinimg.com/736x/05/16/23/0516238ddb8f35a2193e063d2db18e5b.jpg";
@@ -31,6 +27,16 @@ function DesignQuiz() {
             return "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAA1BMVEVWVlahomHLAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC"
         }
     }
+
+    const variants = {
+        visible:{
+            opacity:1
+        },
+        hidden:{
+            opacity:0
+        }   
+    }
+
     return (
         <div className='DesignSection'>
             {/* Heading for the quiz section */}
@@ -39,77 +45,31 @@ function DesignQuiz() {
 
             {/* Main Section for the Quiz */}
             <div className='ImageQuestion'>
-                <div>
-                    <img
-                        src={left_image_resource[q_index]}
-                        onClick={() => {
-                            option_select(1);
-                            setQIndex((prev) => prev + 1);
-                        }
-                        }
-                        alt="first_option"
-                        className='imageOptions'
-                    />
-                </div>
-                <div
-                    className='OptionsSeperator'
-                >
-                    <div
-                        className='OrPartSeperator'
-                    >
-                        OR
+                <motion.div variants={variants} initial="hidden" animate="visible" key={q_index}transition={{duration:0.5}}>
+                    <img src={left_image_resource[q_index]} onClick={() => { option_select(1); setQIndex((prev) => prev + 1); }} alt="first_option" className='imageOptions' />
+                </motion.div>
+                <div className='OptionsSeperator'>
+                    <div className='OrPartSeperator'>OR
                     </div>
-                    <div
-                        className='NeitherOption'
-                        onClick={() => {
-                            option_select(-1);
-                            setQIndex((prev) => prev + 1);
-                        }
-                        }
-                    >
+                    <div className='NeitherOption' onClick={() => { option_select(-1); setQIndex((prev) => prev + 1); }}>
                         Neither
                     </div>
                 </div>
-                <div>
-                    <img
-                        src={right_image_resource[q_index]}
-                        onClick={() => {
-                            option_select(2);
-                            setQIndex((prev) => prev + 1);
-                        }
-                        }
-                        alt="second_option"
-                        className='imageOptions'
-                    />
-                </div>
+                <motion.div variants={variants} initial="hidden" animate="visible" key={q_index+2} transition={{duration:0.5}} >
+                    <img src={right_image_resource[q_index]} onClick={() => { option_select(2); setQIndex((prev) => prev + 1); }} alt="second_option" className='imageOptions' />
+                </motion.div>
             </div>
 
             {/* Button Section maintaing state */}
-            <div
-                className='NavigationButtons'
-            >
-                {choices.map((choice, index) => (<div
-                    className='NavigationImage'
-                    style={{backgroundImage: `url(${bg_image_option(choice,index)})`}}
-                    alt='none'
-                    onClick={()=>{setQIndex(index)}}
-                />
-                )
-                )
-
-                }
+            <div className='NavigationButtons'>
+                {choices.map((choice, index) => (
+                    <div className='NavigationImage' style={{ backgroundImage: `url(${bg_image_option(choice, index)})` }} alt='none' onClick={() => { setQIndex(index) }} />
+                ))}
             </div>
-            <div
-                className='SkipAllButton'
-                onClick={()=>{setQIndex(choices.length)}}
-            >
-                SKIP ALL
-            </div>
-
+            <div className='SkipAllButton' onClick={() => { setQIndex(choices.length) }}>SKIP ALL</div>
             {/* Modal Login Form */}
-            {loginEnable&&<ModalLoginForm onCancel = {onCancel}/>}
+            <ModalLoginForm onCancel={onCancel} visible={loginEnable} />
         </div>
     )
 }
-
 export default DesignQuiz

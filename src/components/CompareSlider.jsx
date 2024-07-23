@@ -2,6 +2,7 @@ import React from 'react'
 import './CompareSlider.css'
 import { useState } from 'react'
 import { ImgComparisonSlider } from '@img-comparison-slider/react';
+import { Link } from 'react-router-dom';
 function CompareSlider() {
   const [project_number, setProjectNumber] = useState(1);
   // Image reesource can be changed after creating the asset folder
@@ -40,7 +41,7 @@ function CompareSlider() {
       </div>
 
       {/* Start Transform Button */}
-      <button className='SliderBottomButton'>START MY TRANSFORMATION</button>
+      <Link to={"design_quiz"} className='SliderBottomButton'>START MY TRANSFORMATION</Link>
     </div>
   )
 }
