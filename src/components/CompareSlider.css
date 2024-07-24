@@ -77,7 +77,7 @@
 
     .ComparisonSliderCont {
         width: 100vw;
-        padding: 0px;
+        margin-top: 30px;
     }
 
     .ComparisonSlider {
@@ -235,16 +235,15 @@
         margin-top: 3%;
         height: auto;
         padding-top: 10px;
-        padding-bottom: 10px;
         font-size: 35px;
         color: #A17A47;
-        border-radius: 10px;
         cursor: pointer;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-        -o-border-radius: 10px;
-    }
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+}
 
     /* For the Comparison Slider */
     .ComparisonSliderCont {
@@ -256,9 +255,14 @@
     /* Adjusting the width of the slider and bringing it into center */
     .ComparisonSlider {
         width: 50%;
-        margin-top: 5%;
+        margin-top: 2%;
         justify-self: center;
-    }
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+}
 
     /* Adjusting the widths and heights of the images so as to fill the slider */
     /* NOTE: Changing units can have undesired effects because it is used in an imported component */
@@ -285,5 +289,7 @@
         text-align: center;
         text-decoration: none;
     }
-
+    ::-webkit-scrollbar{
+        width: 0px;
+    }
 }
