@@ -2,6 +2,7 @@ import React from 'react'
 import './CompareSlider.css'
 import { useState } from 'react'
 import { ImgComparisonSlider } from '@img-comparison-slider/react';
+import { Link } from 'react-router-dom';
 function CompareSlider() {
   const [project_number, setProjectNumber] = useState(1);
   // Image reesource can be changed after creating the asset folder
@@ -24,11 +25,11 @@ function CompareSlider() {
       {/* Project title bar */}
       <div className='SliderProjectTitleBar'>
         {ProjectTitles.map((title, index) => (
-          <div key={index + 1} onClick={() => { setProjectNumber(index + 1) }}>{title}</div>
+          <div className="ProjectTItles" key={index + 1} onClick={() => { setProjectNumber(index + 1) }}>{title}</div>
         ))}
 
         {/* TODO: Insert the Link Here for navigating the user to the gallery */}
-        <div>Explore More+</div>
+        <div style={{marginLeft:'10px', marginRight:'10px'}}>Explore More+</div>
       </div>
 
       {/* Comparison Slider */}
@@ -40,7 +41,7 @@ function CompareSlider() {
       </div>
 
       {/* Start Transform Button */}
-      <button className='SliderBottomButton'>START MY TRANSFORMATION</button>
+      <Link to={"design_quiz"} className='SliderBottomButton'>START MY TRANSFORMATION</Link>
     </div>
   )
 }
