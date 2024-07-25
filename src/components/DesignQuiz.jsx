@@ -28,12 +28,24 @@ function DesignQuiz() {
         }
     }
 
-    const variants = {
+    const variants_left = {
         visible:{
-            opacity:1
+            opacity:1,
+            x:0
         },
         hidden:{
-            opacity:0
+            opacity:0,
+            x:-40
+        }   
+    }
+    const variants_right = {
+        visible:{
+            opacity:1,
+            x:0
+        },
+        hidden:{
+            opacity:0,
+            x:40
         }   
     }
 
@@ -45,7 +57,7 @@ function DesignQuiz() {
 
             {/* Main Section for the Quiz */}
             <div className='ImageQuestion'>
-                <motion.div variants={variants} initial="hidden" animate="visible" key={q_index}transition={{duration:0.5}}>
+                <motion.div variants={variants_left} initial="hidden" animate="visible" key={q_index}transition={{duration:0.3,type:'spring'}}>
                     <img src={left_image_resource[q_index]} onClick={() => { option_select(1); setQIndex((prev) => prev + 1); }} alt="first_option" className='imageOptions' />
                 </motion.div>
                 <div className='OptionsSeperator'>
@@ -55,7 +67,7 @@ function DesignQuiz() {
                         Neither
                     </div>
                 </div>
-                <motion.div variants={variants} initial="hidden" animate="visible" key={q_index+2} transition={{duration:0.5}} >
+                <motion.div variants={variants_right} initial="hidden" animate="visible" key={q_index+2} transition={{duration:0.3,type:'spring'}} >
                     <img src={right_image_resource[q_index]} onClick={() => { option_select(2); setQIndex((prev) => prev + 1); }} alt="second_option" className='imageOptions' />
                 </motion.div>
             </div>
@@ -66,7 +78,7 @@ function DesignQuiz() {
                     <div className='NavigationImage' style={{ backgroundImage: `url(${bg_image_option(choice, index)})` }} alt='none' onClick={() => { setQIndex(index) }} />
                 ))}
             </div>
-            <div className='SkipAllButton' onClick={() => { setQIndex(choices.length) }}>SKIP ALL</div>
+            <motion.div initial={{opacity:0,y:40,scaleX:0,scaleY:0}} animate={{opacity:1,y:0,scaleX:1,scaleY:1, transition:{duration:0.3,type:'spring'}}} className='SkipAllButton' onClick={() => { setQIndex(choices.length) }}>SKIP ALL</motion.div>
             {/* Modal Login Form */}
             <ModalLoginForm onCancel={onCancel} visible={loginEnable} />
         </div>
