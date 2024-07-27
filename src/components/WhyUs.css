@@ -1,0 +1,75 @@
+/* src/components/WhyUs.css */
+.why-us {
+    text-align: center;
+    padding: 20px;
+    color:#715850;
+  }
+  
+  .why-us h2 {
+    margin-bottom: 10px;
+  }
+  
+  .why-us hr {
+    width: 25%;
+    margin: 10px auto;
+    border:none;
+    border-top: 3px solid #8e685b;
+    border-radius: 3px;
+
+  }
+  
+  .why-us-points,
+  .why-us-points-below {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .point {
+    margin: 10px;
+    flex: 1 1 20%;
+    max-width: 20%;
+    text-align: center;
+  }
+  
+  .point img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .button2{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #9b7250b6;
+    color: rgb(250, 246, 242);
+    border-radius: 25px;
+    cursor: pointer;
+    width:33%;
+    font-weight: bold;
+  }
+  
+  .button2.button2:hover {
+    background-color: #835b3c;
+  }
+  @media (max-width: 1024px) {
+    .point {
+      flex: 1 1 30%;
+      max-width: 30%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .point {
+      flex: 1 1 45%;
+      max-width: 45%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .point {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+  
