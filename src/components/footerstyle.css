@@ -1,0 +1,54 @@
+/* Existing CSS */
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block1 {
+  flex: 3;
+}
+
+.block2 {
+  flex: 5;
+  padding: 10px;
+}
+
+.block3 {
+  flex: 2;
+  padding: 10px;
+}
+
+#mainBlock {
+  margin-top: 100px;
+}
+
+/* Keyframes for the animation of block1 */
+@keyframes animateBlock1 {
+  0% {
+    transform: translateX(-200px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Keyframes for the animation of block2 */
+@keyframes animateBlock2 {
+  0% {
+    transform: translateX(200px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Animation classes */
+.animate-block1 {
+  animation: animateBlock1 1s ease-in-out;
+}
+
+.animate-block2 {
+  animation: animateBlock2 1s ease-in-out;
+}
