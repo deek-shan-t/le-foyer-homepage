@@ -1,0 +1,21 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .block1{
+    flex: 3;
+ 
+  }
+  .block3{
+    flex: 2;
+    padding: 10px;
+  }
+  .block2{
+    flex: 5;
+    padding: 10px;
+  }
+ #mainBlock{
+  margin-top: 100px;
+ }
+  
