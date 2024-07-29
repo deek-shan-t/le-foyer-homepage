@@ -36,7 +36,19 @@
     width: 50px;
     height: 50px;
   }
+  .logo1, .logo2, .logo3, .logo5, .logo7{
+    width: 64px;
+    height: 64px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+  }
   
+  .logo4, .logo6{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+  }
   .button2{
     margin-top: 20px;
     padding: 10px 20px;
@@ -45,18 +57,30 @@
     color: rgb(250, 246, 242);
     border-radius: 25px;
     cursor: pointer;
-    width:33%;
     font-weight: bold;
+    transition: background-color 0.3s ease;
   }
-  
-  .button2.button2:hover {
+  .button-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  .button2:hover {
     background-color: #835b3c;
   }
-  @media (max-width: 1024px) {
+  @media (min-width:1024) or (max-width: 1440px) {
     .point {
       flex: 1 1 30%;
       max-width: 30%;
     }
+    .button2 {
+        font-size: 0.9rem;
+        padding: 0.9rem 1.8rem;
+        width:auto;
+      }
+      .why-us hr{
+        width:20%;
+      }
   }
   
   @media (max-width: 768px) {
@@ -64,12 +88,22 @@
       flex: 1 1 45%;
       max-width: 45%;
     }
+    .button2 {
+        font-size: 0.8rem;
+        padding: 0.8rem 1.6rem;
+      }
   }
   
   @media (max-width: 480px) {
     .point {
       flex: 1 1 100%;
-      max-width: 100%;
+      max-width: 80%;
     }
+    .button2{
+    width:50%;
+    }
+     .why-us hr{
+      width:38%;
+     } 
   }
   
