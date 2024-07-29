@@ -1,4 +1,26 @@
-/* Existing CSS */
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+  .block3 {
+    display: none;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .block1,
+  .block2 {
+    width: 100%; 
+  }
+
+  .block2 {
+    order: 1;
+  }
+
+  .block1 {
+    order: 2;
+  }
+}
 footer {
   display: flex;
   justify-content: space-between;
