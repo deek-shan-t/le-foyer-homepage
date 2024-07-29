@@ -5,18 +5,12 @@ import FiveSteps from './components/FiveSteps';
 import CompareSlider from './components/CompareSlider';
 import Footer from './components/Footer';
 
-function App() {
-  return (
-    <div className="App">
+  function App() {
+    return (
+      <div className="App">
       <OurServices />
       <WhyUs />
       <FiveSteps />
-    </div>
-  );
-  
-function App() {
-  return (
-    <div className="App">
       <CompareSlider/>
       <Footer/>
     </div>
