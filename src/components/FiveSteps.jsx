@@ -85,7 +85,7 @@ const FiveSteps = () => {
         <div className="step s5" ref={(el) => (stepsRef.current[4] = el)}>
           <img src={step5} alt="Step 5" className="step-image5" />
           <h3><img src={fifth} alt="fifth" className="fifth" />Handover</h3>
-          <p> review and satisfaction with every detail.</p>
+          <p>Ensuring review and satisfaction with every detail.</p>
         </div>
       </div>
       <div className="section-space"></div>
