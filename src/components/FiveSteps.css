@@ -1,158 +1,178 @@
 /* src/components/FiveSteps.css */
 .five-steps h2{
-    text-align: left;
-    padding: 20px;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    
-  }
-  
-  .header h2 {
-    color:#997249;
-    margin: 0;
-  }
-  
-  .right-align-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    border: none;
-    background-color: #9b7250b6;
-    color: rgb(250, 246, 242);
-    border-radius: 25px;
-    cursor: pointer;
-    width:15%;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
-  
-  .header .right-align-button:hover {
-    background-color: #5c3421;
-  }
-  
-  p {
-    margin: 20px 15px;
-    color:#997249;
-  }
-  
-  .steps {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
+  text-align: left;
+  padding: 20px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.header h2 {
+  color:#997249;
+  margin: 0;
+}
+.right-align-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #9b7250b6;
+  color: rgb(250, 246, 242);
+  border-radius: 25px;
+  cursor: pointer;
+  width:15%;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.header .right-align-button:hover {
+  background-color: #5c3421;
+}
+p {
+  margin: 20px 15px;
+  color:#997249;
+  padding:20px;
+}
+.steps {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.step {
+  margin: 20px;
+  flex: 1 1 10%;
+  max-width: 15%;
+  text-align: center;
+  color:#84613d;
+  padding: 20px;
+  border-radius: 10px;
+  transform: translateY(50px);
+  transition: opacity 1s, transform 1s;
+}
+.s1.animate,
+.s2.animate,
+.s3.animate,
+.s4.animate,
+.s5.animate {
+opacity: 1;
+transform: translateY(0);
+}
+.s1 {
+  transition-delay: 0.1s;
+}
+.s2 {
+  transition-delay: 0.2s;
+}
+.s3 {
+  transition-delay: 0.3s;
+}
+.s4 {
+  transition-delay: 0.4s;
+}
+.s5 {
+  transition-delay: 0.5s;
+}
+.first,.second,.third,.fourth,.fifth{
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+}
+.step-image1 {
+  width: 250px;
+  height: 175px;
+  max-width: 100%;
+  border-radius:200px 150px 50px 50px;
+  margin-bottom: 8px;
+  margin-top: 0px;
+  object-fit:fill;
+}
+.step-image2 {
+  width: 250px;
+  height: 175px;
+  max-width: 100%;
+  border-radius:200px 150px 50px 50px;
+  margin-bottom: 8px;
+  margin-top: 0px;
+  object-fit: fill;
+}
+.step-image3 {
+  width: 250px;
+  height: 175px;
+  max-width: 100%;
+  border-radius:200px 150px 50px 50px;
+  margin-bottom: 8px;
+  margin-top: 0px;
+  object-fit: fill;
+}
+.step-image4 {
+  width: 250px;
+  height: 175px;
+  max-width: 100%;
+  border-radius: 200px 150px 50px 50px;
+  margin-bottom: 8px;
+  margin-top: 0px;
+  object-fit: cover;
+}
+.step-image5 {
+  width: 250px;
+  height: 175px;
+  max-width: 100%;
+  border-radius: 200px 150px 50px 50px;
+  margin-bottom: 8px;
+  margin-top: 0px;
+  object-fit: cover;
+}
+.section-space {
+  height: 80px;
+  background-color:#eee5df; 
+  width: 100%;
+}
+.step h3 {
+  margin-bottom: 0px;
+}
+.step p {
+  text-align: center;
+}
+/* Responsive styles */
+@media (max-width: 1024px) {
   .step {
-    margin: 20px;
-    flex: 1 1 10%;
-    max-width: 15%;
-    text-align: center;
-    color:#84613d;
-    padding: 20px;
-    border-radius: 10px;
+    flex: 1 1 30%;
+    max-width: 30%;
   }
-  .first,.second,.third,.fourth,.fifth{
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-    margin-bottom: 0px;
+}
+@media (max-width: 768px) {
+  .step {
+    flex: 1 1 45%;
+    max-width: 45%;
   }
-  .step-image1 {
-    width: 250px;
-    height: 175px;
-    max-width: 100%;
-    border-radius: 280px 160px 150px 70px;
-    margin-bottom: 8px;
-    margin-top: 0px;
-    object-fit: cover;
+}
+@media (max-width: 480px) {
+  .step {
+    flex: 1 1 100%;
+    max-width: 80%;
   }
-  .step-image2 {
-    width: 250px;
-    height: 175px;
-    max-width: 100%;
-    border-radius: 170px 200px 180px 240px;
-    margin-bottom: 8px;
-    margin-top: 0px;
-    object-fit: cover;
+}
+@media (max-width: 1024px) {
+  .header .right-align-button{
+    font-size: 0.9rem;
+    padding: 0.9rem 1.8rem;
   }
-  .step-image3 {
-    width: 250px;
-    height: 175px;
-    max-width: 100%;
-    border-radius: 160px 180px 100px 90px;
-    margin-bottom: 8px;
-    margin-top: 0px;
-    object-fit: cover;
-  }
-  .step-image4 {
-    width: 250px;
-    height: 175px;
-    max-width: 100%;
-    border-radius: 160px 180px 80px 100px;
-    margin-bottom: 8px;
-    margin-top: 0px;
-    object-fit: cover;
-  }
-  .step-image5 {
-    width: 250px;
-    height: 175px;
-    max-width: 100%;
-    border-radius: 200px 150px 50px 50px;
-    margin-bottom: 8px;
-    margin-top: 0px;
-    object-fit: cover;
-  }
-  
-  .step h3 {
-    margin-bottom: 0px;
-  }
-  
-  .step p {
-    text-align: center;
-  }
-  
-  /* Responsive styles */
-  @media (max-width: 1024px) {
-    .step {
-      flex: 1 1 30%;
-      max-width: 30%;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .step {
-      flex: 1 1 45%;
-      max-width: 45%;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .step {
-      flex: 1 1 100%;
+  .para{
+      text-align:center;
       max-width: 100%;
-    }
+  } 
+}
+@media (max-width: 768px) {
+  .header .right-align-button{
+    font-size: 0.8rem;
+    padding: 0.8rem 1.6rem;
   }
-  @media (max-width: 1024px) {
-    .header .right-align-button{
-      font-size: 0.9rem;
-      padding: 0.9rem 1.8rem;
-    }
+}
+@media (max-width: 480px) {
+  .header .right-align-button, .button3 {
+    font-size: 0.7rem;
+    padding: 0.7rem 1.4rem;
+    width: 45%; 
   }
-  
-  @media (max-width: 768px) {
-    .header .right-align-button{
-      font-size: 0.8rem;
-      padding: 0.8rem 1.6rem;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .header .right-align-button, .button3 {
-      font-size: 0.7rem;
-      padding: 0.7rem 1.4rem;
-      width: 45%;  /* Full width on small screens */
-    }
-  }
+}

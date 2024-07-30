@@ -1,109 +1,134 @@
 /* src/components/WhyUs.css */
 .why-us {
-    text-align: center;
-    padding: 20px;
-    color:#715850;
-  }
-  
-  .why-us h2 {
-    margin-bottom: 10px;
-  }
-  
-  .why-us hr {
-    width: 25%;
-    margin: 10px auto;
-    border:none;
-    border-top: 3px solid #8e685b;
-    border-radius: 3px;
-
-  }
-  
-  .why-us-points,
-  .why-us-points-below {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
+  text-align: center;
+  color:#715850;
+}
+.why-us h2 {
+  margin-bottom: 20px;
+}
+.why-us hr {
+  width: 25%;
+  margin: 10px auto;
+  border:none;
+  border-top: 3px solid #8e685b;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+.section-space {
+  height: 80px; /* Adjust the height as needed */
+  background-color:#eee5df;
+}
+.why-us-points,
+.why-us-points-below {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.point {
+  margin: 10px;
+  flex: 1 1 20%;
+  max-width: 20%;
+  text-align: center;
+  transform: translateY(50px);
+  transition: opacity 1s, transform 1s;
+}
+.point img {
+  width: 50px;
+  height: 50px;
+}
+.p1.animate,
+.p2.animate,
+.p3.animate, 
+.p4.animate, .p5.animate, .p6.animate, .p7.animate{
+  opacity: 1;
+  transform: translateY(0);
+}
+.p1 {
+  transition-delay: 0.1s;
+}
+.p2 {
+  transition-delay: 0.2s;
+}
+.p3 {
+  transition-delay: 0.3s;
+}
+.p4 {
+  transition-delay: 0.4s;
+}
+.p5 {
+  transition-delay: 0.5s;
+}
+.p6 {
+  transition-delay: 0.6s;
+}
+.p7 {
+  transition-delay: 0.7s;
+}
+.logo1, .logo2, .logo3, .logo5, .logo7{
+  width: 64px;
+  height: 64px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+}
+.logo4, .logo6{
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+}
+.button2{
+  margin-top: 5px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #9b7250b6;
+  color: rgb(250, 246, 242);
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+.button2:hover {
+  background-color: #835b3c;
+}
+@media (min-width:1024) or (max-width: 1440px) {
   .point {
-    margin: 10px;
-    flex: 1 1 20%;
-    max-width: 20%;
-    text-align: center;
+    flex: 1 1 30%;
+    max-width: 30%;
   }
-  
-  .point img {
-    width: 50px;
-    height: 50px;
+  .button2 {
+      font-size: 0.9rem;
+      padding: 0.9rem 1.8rem;
+      width:auto;
+    }
+    .why-us hr{
+      width:20%;
+    }
+}
+@media (max-width: 768px) {
+  .point {
+    flex: 1 1 45%;
+    max-width: 45%;
   }
-  .logo1, .logo2, .logo3, .logo5, .logo7{
-    width: 64px;
-    height: 64px;
-    margin-right: 10px;
-    margin-bottom: 0px;
-  }
-  
-  .logo4, .logo6{
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-    margin-bottom: 0px;
+  .button2 {
+      font-size: 0.8rem;
+      padding: 0.8rem 1.6rem;
+    }
+}
+@media (max-width: 480px) {
+  .point {
+    flex: 1 1 100%;
+    max-width: 80%;
   }
   .button2{
-    margin-top: 20px;
-    padding: 10px 20px;
-    border: none;
-    background-color: #9b7250b6;
-    color: rgb(250, 246, 242);
-    border-radius: 25px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+  width:50%;
   }
-  .button-container {
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
-  }
-  .button2:hover {
-    background-color: #835b3c;
-  }
-  @media (min-width:1024) or (max-width: 1440px) {
-    .point {
-      flex: 1 1 30%;
-      max-width: 30%;
-    }
-    .button2 {
-        font-size: 0.9rem;
-        padding: 0.9rem 1.8rem;
-        width:auto;
-      }
-      .why-us hr{
-        width:20%;
-      }
-  }
-  
-  @media (max-width: 768px) {
-    .point {
-      flex: 1 1 45%;
-      max-width: 45%;
-    }
-    .button2 {
-        font-size: 0.8rem;
-        padding: 0.8rem 1.6rem;
-      }
-  }
-  
-  @media (max-width: 480px) {
-    .point {
-      flex: 1 1 100%;
-      max-width: 80%;
-    }
-    .button2{
-    width:50%;
-    }
-     .why-us hr{
-      width:38%;
-     } 
-  }
-  
+   .why-us hr{
+    width:38%;
+   } 
+}

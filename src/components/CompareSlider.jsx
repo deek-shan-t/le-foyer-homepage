@@ -40,14 +40,16 @@ function CompareSlider() {
       </div>
 
       {/* Project title bar */}
-      <motion.div initial={{scaleX:0,y:20,scaleY:0,opacity:1}} animate={controls1} ref={ref1} className='SliderProjectTitleBar'>
-        {ProjectTitles.map((title, index) => (
-          <div className="ProjectTItles" key={index + 1} onClick={() => { setProjectNumber(index + 1) }}>{title}</div>
-        ))}
+      <motion.div initial={{ scaleX: 0, y: 20, scaleY: 0, opacity: 1 }} animate={controls1} ref={ref1} className='SliderProjectTitleBar'>
+  {ProjectTitles.map((title, index) => (
+    <div className="ProjectTItles" key={index + 1} onClick={() => { setProjectNumber(index + 1) }}>{title}</div>
+  ))}
 
-        {/* TODO: Insert the Link Here for navigating the user to the gallery */}
-        <div style={{ marginLeft: '10px', marginRight: '10px' }}>Explore More+</div>
-      </motion.div>
+  {/* Insert the Link Here for navigating the user to the gallery */}
+  <div style={{ marginLeft: '10px', marginRight: '10px' }}>
+    <Link to="explore-more"  className="ExploreMoreLink">Explore More+</Link>
+  </div>
+</motion.div>
 
       {/* Comparison Slider */}
       <motion.div initial={{scaleX:0,scaleY:0,opacity:0}} animate={{scaleX:1,scaleY:1,opacity:1,transition:{duration:0.7,type:'spring'}}} className='ComparisonSliderCont'>

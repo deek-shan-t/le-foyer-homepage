@@ -1,0 +1,42 @@
+#image_gallery_heading{
+    background-color: #b1825d;
+    color: white;
+   padding: 12px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+  }
+  #image_gallery_heading {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Space out items evenly */
+    gap: 10px; /* Space between images */
+    padding: 10px;
+  }
+  
+  .gallery-image {
+    flex: 1 1 calc(33.333% - 20px); /* Adjust width for a 3-column layout with gap */
+    max-width: calc(33.333% - 20px); /* Ensure max width with gap */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+  }
+  
+  @media (max-width: 768px) {
+    .gallery-image {
+      flex: 1 1 calc(50% - 20px); /* Adjust width for a 2-column layout with gap */
+      max-width: calc(50% - 20px); /* Ensure max width with gap */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .gallery-image {
+      flex: 1 1 calc(100% - 20px); /* Adjust width for a 1-column layout with gap */
+      max-width: calc(100% - 20px); /* Ensure max width with gap */
+    }
+  }
+  

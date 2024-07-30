@@ -51,7 +51,7 @@ function Footer() {
         <ContactEnd />
       </div>
       <div className='block3'>
-        {/* Empty block3 */}
+       
       </div>
       <div className='block2' ref={block2Ref}>
         <RightTop />

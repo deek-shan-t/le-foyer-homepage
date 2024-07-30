@@ -6,12 +6,13 @@ import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
 import DesignQuiz from './components/DesignQuiz';
 import Layout from './Layout';
+import Image_Gallery from './components/Image_gallery'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout/>}>
       <Route path='' element={<App/>}/>
       <Route path='design_quiz' element={<DesignQuiz/>}/>
-      <Route path='explore-more' element={<DesignQuiz/>}/>
+      <Route path='explore-more' element={<Image_Gallery/>}/>
     </Route>
   )
 )
