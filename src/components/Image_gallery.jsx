@@ -1,6 +1,6 @@
 import React from 'react';
 import './Image_gallery.css';
-import imggallery from './handover.png';
+import imggallery from '../assets/handover.png';
 
 function Image_gallery() {
   return (

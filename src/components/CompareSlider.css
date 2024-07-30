@@ -1,295 +1,307 @@
 * {
-    box-sizing: border-box;
-    margin: 0px;
+  box-sizing: border-box;
+  margin: 0px;
 }
 
-@media only screen and (min-width:360px) and (max-width:768px) {
-    .CompareSliderSection {
-        /* margin-top: 1%; */
-        width: 100vw;
-        display: grid;
-    }
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+  .CompareSliderSection {
+    /* margin-top: 1%; */
+    width: 100vw;
+    display: grid;
+  }
 
-    .SliderSectionTopHeading {
-        color: #A17A47;
-        justify-self: center;
-        width: 100vw;
-        text-align: center;
-    }
+  .SliderSectionTopHeading {
+    color: #a17a47;
+    justify-self: center;
+    width: 100vw;
+    text-align: center;
+  }
 
-    .SliderSectionSubHeading {
-        color: #ECBA68;
-        justify-self: center;
-        margin-top: 3px;
-        text-align: center;
-    }
+  .SliderSectionSubHeading {
+    color: #ecba68;
+    justify-self: center;
+    margin-top: 3px;
+    text-align: center;
+  }
 
-    .sliderHead {
-        display: grid;
-        justify-self: center;
-    }
+  .sliderHead {
+    display: grid;
+    justify-self: center;
+  }
 
-    .SliderProjectTitleBar {
-        background-color: #F4EADF;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        height: 100%;
-        overflow: scroll;
-        width: 98vw;
-        margin-left: 10px;
-        margin-right: 10px;
-        align-items: center;
-        margin-top: 4%;
-        font-size: 20px;
-        padding: 2px;
-        color: #A17A47;
-        cursor: pointer;
-        border-radius: 10px;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-        -o-border-radius: 10px;
-    }
+  .SliderProjectTitleBar {
+    background-color: #f4eadf;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    overflow: scroll;
+    width: 98vw;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    margin-top: 4%;
+    font-size: 20px;
+    padding: 2px;
+    color: #a17a47;
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
 
-    .ProjectTItles {
-        margin-left: 10px;
-        touch-action: cross-slide-x;
-    }
+  .ProjectTItles {
+    margin-left: 10px;
+    touch-action: cross-slide-x;
+  }
 
-    .SliderBottomButton {
-        width: 60%;
-        padding: 3px 3px 3px 3px;
-        margin-top: 4%;
-        justify-self: center;
-        background-color: #B99F85;
-        border-radius: 30px;
-        -webkit-border-radius: 30px;
-        -moz-border-radius: 30px;
-        -ms-border-radius: 30px;
-        -o-border-radius: 30px;
-        font-size: small;
-        color: white;
-        font-weight: bold;
-        text-align: center;
-        text-decoration: none;
-    }
+  .SliderBottomButton {
+    width: 60%;
+    padding: 3px 3px 3px 3px;
+    margin-top: 4%;
+    justify-self: center;
+    background-color: #b99f85;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    font-size: small;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+  }
 
-    .ComparisonSliderCont {
-        width: 100vw;
-        margin-top: 30px;
-    }
+  .ComparisonSliderCont {
+    width: 100vw;
+    margin-top: 30px;
+  }
 
-    .ComparisonSlider {
-        width: 100%;
-        margin-top: 50px;
-        justify-self: center;
-    }
+  .ComparisonSlider {
+    width: 100%;
+    margin-top: 50px;
+    justify-self: center;
+  }
 
-    .compImages {
-        width: 100%;
-        height: 100%;
-    }
+  .compImages {
+    width: 100%;
+    height: 100%;
+  }
 
-    ::-webkit-scrollbar {
-        /* width: 1px; */
-        /* border-radius: 10px; */
-        overflow: hidden;
-        /* -webkit-border-radius: 10px; */
-    }
+  ::-webkit-scrollbar {
+    /* width: 1px; */
+    /* border-radius: 10px; */
+    overflow: hidden;
+    /* -webkit-border-radius: 10px; */
+  }
 
-    ::-webkit-scrollbar-track {
-        background-color: #B99F85;
-        overflow: hidden;
-        margin-top: 2%;
-        /* border-radius: 10px; */
-    }
+  ::-webkit-scrollbar-track {
+    background-color: #b99f85;
+    overflow: hidden;
+    margin-top: 2%;
+    /* border-radius: 10px; */
+  }
 
-    ::-webkit-scrollbar-thumb {
-        background: white;
-        overflow: auto;
-        /* border-radius: 10px; */
-    }
+  ::-webkit-scrollbar-thumb {
+    background: white;
+    overflow: auto;
+    /* border-radius: 10px; */
+  }
+  .ExploreMoreLink{
+
+    text-decoration:none;
+    color: #a17a47;
+  }
 }
 
-@media only screen and (min-width:768px) {
-    .CompareSliderSection {
-        margin-top: 1%;
-        width: 100%;
-        display: grid;
-    }
+@media only screen and (min-width: 768px) {
+  .CompareSliderSection {
+    margin-top: 1%;
+    width: 100%;
+    display: grid;
+  }
 
-    .sliderHead {
-        display: grid;
-        justify-self: center;
-    }
+  .sliderHead {
+    display: grid;
+    justify-self: center;
+  }
 
-    /* For the larger heading */
-    .SliderSectionTopHeading {
-        color: #A17A47;
-        justify-self: center;
-    }
+  /* For the larger heading */
+  .SliderSectionTopHeading {
+    color: #a17a47;
+    justify-self: center;
+  }
 
-    /* For the sub heading */
-    .SliderSectionSubHeading {
-        color: #ECBA68;
-        justify-self: center;
-        margin-top: 3px;
-    }
+  /* For the sub heading */
+  .SliderSectionSubHeading {
+    color: #ecba68;
+    justify-self: center;
+    margin-top: 3px;
+  }
 
-    .SliderProjectTitleBar {
-        background-color: #F4EADF;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        height: 100%;
-        overflow: scroll;
-        /*width: fit-content;*/
-        /* margin-left: 10px; */
-        /* margin-right: 10px; */
-        align-items: center;
-        margin-top: 4%;
-        font-size: 20px;
-        padding: 2px;
-        color: #A17A47;
-        cursor: pointer;
-        border-radius: 10px;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-        -o-border-radius: 10px;
-    }
+  .SliderProjectTitleBar {
+    background-color: #f4eadf;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    overflow: scroll;
+    /*width: fit-content;*/
+    /* margin-left: 10px; */
+    /* margin-right: 10px; */
+    align-items: center;
+    margin-top: 4%;
+    font-size: 20px;
+    padding: 2px;
+    color: #a17a47;
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
 
-    .ComparisonSliderCont {
-        width: 100%;
-        display: grid;
-    }
+  .ComparisonSliderCont {
+    width: 100%;
+    display: grid;
+  }
 
-    /* Adjusting the width of the slider and bringing it into center */
-    .ComparisonSlider {
-        width: 100%;
-        margin-top: 8%;
-        justify-self: center;
-    }
+  /* Adjusting the width of the slider and bringing it into center */
+  .ComparisonSlider {
+    width: 100%;
+    margin-top: 8%;
+    justify-self: center;
+  }
 
-    /* Adjusting the widths and heights of the images so as to fill the slider */
-    /* NOTE: Changing units can have unknown effects because it is used in an imported component */
-    .compImages {
-        width: 100%;
-        height: 550px;
-    }
+  /* Adjusting the widths and heights of the images so as to fill the slider */
+  /* NOTE: Changing units can have unknown effects because it is used in an imported component */
+  .compImages {
+    width: 100%;
+    height: 550px;
+  }
 
-    /* Styling the button at the bottom */
-    .SliderBottomButton {
-        width: 30%;
-        padding: 12px 8px 12px 8px;
-        margin-top: 1%;
-        justify-self: center;
-        background-color: #B99F85;
-        border-radius: 30px;
-        -webkit-border-radius: 30px;
-        -moz-border-radius: 30px;
-        -ms-border-radius: 30px;
-        -o-border-radius: 30px;
-        font-size: x-large;
-        color: white;
-        font-weight: bold;
-        text-align: center;
-        text-decoration: none;
-    }
+  /* Styling the button at the bottom */
+  .SliderBottomButton {
+    width: 30%;
+    padding: 12px 8px 12px 8px;
+    margin-top: 1%;
+    justify-self: center;
+    background-color: #b99f85;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    font-size: x-large;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+  }
+  .ExploreMoreLink {
+    text-decoration:none;
+    color: #a17a47;
+  }
 }
 
-@media only screen and (min-width:1024px) {
+@media only screen and (min-width: 1024px) {
+  /* For the whole section */
+  .CompareSliderSection {
+    margin-top: 1%;
+    width: 100%;
+    display: grid;
+  }
 
-    /* For the whole section */
-    .CompareSliderSection {
-        margin-top: 1%;
-        width: 100%;
-        display: grid;
-    }
+  /* For the headline on the top of the seciton */
+  .sliderHead {
+    display: grid;
+    justify-self: center;
+  }
 
-    /* For the headline on the top of the seciton */
-    .sliderHead {
-        display: grid;
-        justify-self: center;
-    }
+  /* For the larger heading */
+  .SliderSectionTopHeading {
+    color: #a17a47;
+    justify-self: center;
+  }
 
-    /* For the larger heading */
-    .SliderSectionTopHeading {
-        color: #A17A47;
-        justify-self: center;
-    }
+  /* For the sub heading */
+  .SliderSectionSubHeading {
+    color: #ecba68;
+    justify-self: center;
+    margin-top: 3px;
+  }
 
-    /* For the sub heading */
-    .SliderSectionSubHeading {
-        color: #ECBA68;
-        justify-self: center;
-        margin-top: 3px;
-    }
+  /* For the Title Bar of different projects */
+  .SliderProjectTitleBar {
+    background-color: #f4eadf;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3%;
+    height: auto;
+    padding-top: 10px;
+    font-size: 35px;
+    color: #a17a47;
+    cursor: pointer;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+  }
 
-    /* For the Title Bar of different projects */
-    .SliderProjectTitleBar {
-        background-color: #F4EADF;
-        display: flex;
-        justify-content: space-evenly;
-        margin-top: 3%;
-        height: auto;
-        padding-top: 10px;
-        font-size: 35px;
-        color: #A17A47;
-        cursor: pointer;
-        border-radius: 30px;
-        -webkit-border-radius: 30px;
-        -moz-border-radius: 30px;
-        -ms-border-radius: 30px;
-        -o-border-radius: 30px;
-}
+  /* For the Comparison Slider */
+  .ComparisonSliderCont {
+    width: 100%;
+    display: grid;
+    height: 550px;
+  }
 
-    /* For the Comparison Slider */
-    .ComparisonSliderCont {
-        width: 100%;
-        display: grid;
-        height: 550px;
-    }
+  /* Adjusting the width of the slider and bringing it into center */
+  .ComparisonSlider {
+    width: 50%;
+    margin-top: 2%;
+    justify-self: center;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
 
-    /* Adjusting the width of the slider and bringing it into center */
-    .ComparisonSlider {
-        width: 50%;
-        margin-top: 2%;
-        justify-self: center;
-        border-radius: 20px;
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
-        -ms-border-radius: 20px;
-        -o-border-radius: 20px;
-}
+  /* Adjusting the widths and heights of the images so as to fill the slider */
+  /* NOTE: Changing units can have undesired effects because it is used in an imported component */
+  .compImages {
+    width: 100%;
+    height: 550px;
+  }
 
-    /* Adjusting the widths and heights of the images so as to fill the slider */
-    /* NOTE: Changing units can have undesired effects because it is used in an imported component */
-    .compImages {
-        width: 100%;
-        height: 550px;
-    }
-
-    /* Styling the button at the bottom */
-    .SliderBottomButton {
-        width: 30%;
-        padding: 12px 8px 12px 8px;
-        margin-top: 1%;
-        justify-self: center;
-        background-color: #B99F85;
-        border-radius: 30px;
-        -webkit-border-radius: 30px;
-        -moz-border-radius: 30px;
-        -ms-border-radius: 30px;
-        -o-border-radius: 30px;
-        font-size: x-large;
-        color: white;
-        font-weight: bold;
-        text-align: center;
-        text-decoration: none;
-    }
-    ::-webkit-scrollbar{
-        width: 0px;
-    }
+  /* Styling the button at the bottom */
+  .SliderBottomButton {
+    width: 30%;
+    padding: 12px 8px 12px 8px;
+    margin-top: 1%;
+    justify-self: center;
+    background-color: #b99f85;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    font-size: x-large;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  .ExploreMoreLink {
+    text-decoration:none;
+    color: #a17a47;
+  }
 }
