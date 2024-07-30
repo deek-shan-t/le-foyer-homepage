@@ -1,104 +1,124 @@
 /* src/components/OurServices.css */
 .our-services {
-    text-align: center;
-    padding: 20px;
-    color:#8e685b;
-  }
+  text-align: center;
+  color:#8e685b;
   
-  .our-services h2 {
-    margin-bottom: 10px;
-    position:relative;
-    display:inline-block;
-  }
-  .service-logo {
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
-    margin-bottom: 0px;
-  }
-  .our-services hr {
-    margin: 10px auto;
-    border:none;
-    border-top: 3px solid #8e685b;
-    border-radius: 3px;
-    width:30%;
-  }
-  
-  .service-boxes {
-    display: flex;
-    justify-content:space-evenly;
-    flex-wrap: wrap;
-  }
-  
-  .service-box {
-    border: 1.5px solid #9a6b5c;
-    border-radius: 25px;
-    padding: 20px;
-    margin: 10px;
-    flex: 10%;
-    max-width: 20%;
-    flex-grow: 1;
-    background-color: #eee5df;
-    color:#653712e9;
-  }
-  
-  
-  .service-box ul {
-    text-align: left;
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  
-  .button1{
-    margin-top: 20px;
-    padding: 10px 20px;
-    border: none;
-    background-color: #9b7250b6;
-    color: rgb(250, 246, 242);
-    border-radius: 25px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
-  
-  .button1.button1:hover {
-    background-color: #835b3c;
-  }
-  @media (min-width: 1024px) and (max-width: 1440px) {
-    .our-services hr {
-      width:20%; /* Adjust width for laptop screens */
-    }
-    .service-box {
-      flex: 1 1 30%;
-      width: 70%;
-    }
-    
-    .button1 {
-      font-size: 0.9rem;
-      padding: 0.9rem 1.8rem;
-    }
-    
-  }
-  @media (max-width: 768px) {
-    .service-box {
-      flex: 1 1 100%;
-      max-width: 100%;
-    }
-.our-services hr{
-  width:30%;
 }
+.our-services h2 {
+  margin-bottom: 8px;
+  position:relative;
+  display:inline-block;
+}
+.service-logo {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+}
+.our-services hr {
+  margin: 10px auto;
+  border:none;
+  border-top: 3px solid #8e685b;
+  border-radius: 3px;
+  width:30%;
+  margin-bottom: 15px;
+}
+.service-boxes {
+  display: flex;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+}
+.service-box.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+.service-box {
+  border: 1.5px solid #9a6b5c;
+  border-radius: 25px;
+  padding: 20px;
+  margin: 10px;
+  flex: 10%;
+  max-width: 20%;
+  flex-grow: 1;
+  background-color: #eee5df;
+  color:#653712e9;
+  box-sizing:content-box;
+  transform: translateY(30px);
+transition: opacity 1s, transform 1s;
+}
+.section-space {
+  height: 80px; /* Adjust the height as needed */
+  background-color:#eee5df; /* Replace with your desired color */
+}
+.b1.animate,
+.b2.animate,
+.b3.animate
+{
+opacity: 1;
+transform: translateY(5);
+}
+.b1 {
+  transition-delay: 0.1s;
+}
+.b2 {
+  transition-delay: 0.2s;
+}
+.b3 {
+  transition-delay: 0.3s;
+}
+.service-box ul {
+  text-align: left;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+.button1{
+  margin-top: 30px;
+  margin-bottom: 40px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #9b7250b6;
+  color: rgb(250, 246, 242);
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.button1.button1:hover {
+  background-color: #835b3c;
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .our-services hr {
+    width:20%; /* Adjust width for laptop screens */
+  }
+  .service-box {
+    flex: 1 1 30%;
+    width: 70%;
+  }
+  .button1 {
+    font-size: 0.9rem;
+    padding: 0.9rem 1.8rem;
   }
   
-  @media (min-width:320px) and (max-width: 576px) {
-    .header {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .header button {
-      margin-top: 10px;
-    }
-  .our-services hr{
-      width: 60%;
+}
+@media (max-width: 768px) {
+  .service-box {
+    flex: 1 1 100%;
+    max-width: 70%;
   }
+.our-services hr{
+width:30%;
+}
+}
+@media (min-width:320px) and (max-width: 576px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
   }
+
+  .header button {
+    margin-top: 10px;
+  }
+.our-services hr{
+    width: 60%;
+}
+}
