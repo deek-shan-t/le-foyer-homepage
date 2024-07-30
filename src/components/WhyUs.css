@@ -1,7 +1,6 @@
 /* src/components/WhyUs.css */
 .why-us {
   text-align: center;
- 
   color:#715850;
 }
 .why-us h2 {
@@ -14,11 +13,10 @@
   border-top: 3px solid #8e685b;
   border-radius: 3px;
   margin-bottom: 20px;
-
 }
 .section-space {
   height: 80px; /* Adjust the height as needed */
-  background-color:#eee5df; /* Replace with your desired color */
+  background-color:#eee5df;
 }
 .why-us-points,
 .why-us-points-below {
@@ -32,7 +30,7 @@
   max-width: 20%;
   text-align: center;
   transform: translateY(50px);
-transition: opacity 1s, transform 1s;
+  transition: opacity 1s, transform 1s;
 }
 .point img {
   width: 50px;
@@ -42,8 +40,8 @@ transition: opacity 1s, transform 1s;
 .p2.animate,
 .p3.animate, 
 .p4.animate, .p5.animate, .p6.animate, .p7.animate{
-opacity: 1;
-transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 .p1 {
   transition-delay: 0.1s;

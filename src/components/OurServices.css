@@ -2,7 +2,6 @@
 .our-services {
   text-align: center;
   color:#8e685b;
-  
 }
 .our-services h2 {
   margin-bottom: 8px;
@@ -48,7 +47,7 @@ transition: opacity 1s, transform 1s;
 }
 .section-space {
   height: 80px; /* Adjust the height as needed */
-  background-color:#eee5df; /* Replace with your desired color */
+  background-color:#eee5df;
 }
 .b1.animate,
 .b2.animate,
@@ -98,7 +97,6 @@ transform: translateY(5);
     font-size: 0.9rem;
     padding: 0.9rem 1.8rem;
   }
-  
 }
 @media (max-width: 768px) {
   .service-box {
