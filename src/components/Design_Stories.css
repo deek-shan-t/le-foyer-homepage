@@ -1,0 +1,107 @@
+/* Media query for screen widths between 360px and 768px */
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Arrange container items vertically */
+      align-items: center;    /* Center align the items */
+    }
+  
+    .blocks {
+      width: 100%; /* Make blocks take full width */
+    }
+  }
+  
+  #design_heading {
+    margin-top: 50px;
+  }
+  
+  #design_sub_heading {
+    margin: 5px;
+    font-size: 20px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between; /* Distribute space between items */
+  }
+  
+  .row_left {
+    flex: 2; /* Row left takes more space */
+  }
+  
+  .row_right {
+    flex: 1; /* Row right takes less space */
+  }
+  
+  #design_stories_img {
+    border: 3px solid #936317;
+  }
+  
+  #button2 {
+    margin: 11px;
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #835b3c;
+    background-color: #e9d3c3;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #heading_review {
+    font-size: 100px;
+    color: #835b3c;
+  }
+  
+  .reviews {
+    width: 250px;
+    height: 175px;
+    max-width: 100%;
+    border-radius: 160px 180px 100px 90px;
+    margin-bottom: 3px;
+    margin-top: 0px;
+    object-fit: cover;
+  }
+  
+  .blocks {
+    flex: 1;
+    margin-top: 100px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 50px;
+  }
+  
+  .review_boxs_heading_ize {
+    font-size: 17px;
+  }
+  
+  /* Additional styles for better layout */
+  .center {
+    text-align: center;
+  }
+  
+  .justify {
+    text-align: justify;
+  }
+  
+  .steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #835b3c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #6d482d;
+  }
+  

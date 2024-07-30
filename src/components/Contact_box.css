@@ -29,4 +29,10 @@
 .underline{
     text-decoration: underline;
 }
-
+#imgbox{
+    padding: 12px;
+}
+#imgbox img{
+  height: 25px;
+  margin: 6px;
+}
