@@ -1,0 +1,18 @@
+.center{
+    text-align: center;
+}
+.heading{
+    color : #7e4b00 ;
+}
+.button {
+    margin: 11px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    background-color: #b99f85; 
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
