@@ -47,7 +47,7 @@ function CompareSlider() {
 
   {/* Insert the Link Here for navigating the user to the gallery */}
   <div style={{ marginLeft: '10px', marginRight: '10px' }}>
-    <Link to="./Image_gallery">Explore More+</Link>
+    <Link to="explore-more"  className="ExploreMoreLink">Explore More+</Link>
   </div>
 </motion.div>
 
