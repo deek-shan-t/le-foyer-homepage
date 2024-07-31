@@ -18,8 +18,6 @@ const WhyUs = () => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('animate');
-                    } else {
-                        entry.target.classList.remove('animate');
                     }
                 });
             },
@@ -44,7 +42,6 @@ const WhyUs = () => {
             });
         };
     }, []);
-
     return (
         <div className="why-us">
             <h2>WHY US</h2>

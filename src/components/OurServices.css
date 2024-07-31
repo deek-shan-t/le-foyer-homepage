@@ -42,8 +42,9 @@
   background-color: #eee5df;
   color:#653712e9;
   box-sizing:content-box;
-  transform: translateY(30px);
-transition: opacity 1s, transform 1s;
+  opacity: 0%;
+  transform: translateY(50px);
+  transition: opacity 0.2s ease-out, transform 0.3s ease-out;
 }
 .section-space {
   height: 80px; /* Adjust the height as needed */
@@ -54,7 +55,7 @@ transition: opacity 1s, transform 1s;
 .b3.animate
 {
 opacity: 1;
-transform: translateY(5);
+transform: translateY(0);
 }
 .b1 {
   transition-delay: 0.1s;
