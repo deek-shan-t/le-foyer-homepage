@@ -4,11 +4,10 @@ import WhyUs from './components/WhyUs';
 import FiveSteps from './components/FiveSteps';
 import CompareSlider from './components/CompareSlider';
 import Footer from './components/Footer';
-import QuoteForm from './components/form';
-import Header from './components/nav_bar';
-import Navbar from './components/nav_bar';
+import QuoteForm from './components/Form';
+import Header from './components/NavBar';
 import AboutUs from './components/about_us';
-import Design_Stories from './components/Design_Stories';
+import DesignStories from './components/DesignStories';
 
   function App() {
     return (
@@ -20,7 +19,7 @@ import Design_Stories from './components/Design_Stories';
       <WhyUs />
       <FiveSteps />
       <CompareSlider/>
-      <Design_Stories/>
+      <DesignStories/>
       <Footer/>
     </div>
   )

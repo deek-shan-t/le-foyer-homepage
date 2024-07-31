@@ -12,7 +12,7 @@ function DesignQuiz() {
     useEffect(() => {
         if (q_index >= choices.length){
             setQIndex(choices.length-1);setLoginEnable(1);
-            setChoices((prev)=>(prev.map((choice)=>(choice == 0?-1:choice))));
+            setChoices((prev)=>(prev.map((choice)=>(choice === 0?-1:choice))));
         }
     }, [q_index, choices])
     const onCancel = () => { setLoginEnable(0); setQIndex(0) }
