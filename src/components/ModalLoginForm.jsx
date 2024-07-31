@@ -41,7 +41,7 @@ function ModalLoginForm({ onCancel, visible }) {
                     </div>
                     <div className='ModalLoginFooter'>
                         <div>We will never share or use your email inappropriately</div>
-                        <div style={{ fontSize: '14px', textAlign: 'center' }}>By signing up, you agree to our <a style={{ color: 'chocolate' }} href='#'>Terms and Conditions</a></div>
+                        <div style={{ fontSize: '14px', textAlign: 'center' }}>By signing up, you agree to our <a style={{ color: 'chocolate' }} href=''>Terms and Conditions</a></div>
                     </div>
                 </motion.div>}
             </div>}
