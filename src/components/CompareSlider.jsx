@@ -23,8 +23,8 @@ function CompareSlider() {
   },[isInview1,controls1])
   const [project_number, setProjectNumber] = useState(1);
   // Image reesource can be changed after creating the asset folder
-  const left_image_resource = ["https://images.pexels.com/photos/2883049/pexels-photo-2883049.jpeg?auto=compress&cs=tinysrgb&w=600", "https://images.pexels.com/photos/2251247/pexels-photo-2251247.jpeg?auto=compress&cs=tinysrgb&w=600", "https://images.pexels.com/photos/5644353/pexels-photo-5644353.jpeg?auto=compress&cs=tinysrgb&w=600", "https://images.pexels.com/photos/23916863/pexels-photo-23916863/free-photo-of-luxury-interior-design.png?auto=compress&cs=tinysrgb&w=600", "https://images.pexels.com/photos/23916869/pexels-photo-23916869/free-photo-of-interior-design-of-luxury-living-room.png?auto=compress&cs=tinysrgb&w=600", "https://images.pexels.com/photos/23916837/pexels-photo-23916837/free-photo-of-pool-in-house.png?auto=compress&cs=tinysrgb&w=600"]
-  const right_image_resource = ["https://images.pexels.com/photos/23119651/pexels-photo-23119651/free-photo-of-interior-design-of-a-house.jpeg?auto=compress&cs=tinysrgb&w=600", "https://images.pexels.com/photos/6480707/pexels-photo-6480707.jpeg?auto=compress&cs=tinysrgb&w=600", "https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=600", "https://images.pexels.com/photos/210547/pexels-photo-210547.jpeg?auto=compress&cs=tinysrgb&w=600", "https://images.pexels.com/photos/2635038/pexels-photo-2635038.jpeg?auto=compress&cs=tinysrgb&w=600", "https://images.pexels.com/photos/3797991/pexels-photo-3797991.jpeg?auto=compress&cs=tinysrgb&w=600"]
+  const left_image_resource =  ["/1aComp.jpeg", "/2aComp.jpeg", "/3aComp.jpeg", "/4aComp.jpeg", "/5aComp.jpeg","/6aComp.jpeg"]
+  const right_image_resource = ["/1bComp.jpeg", "/2bComp.jpeg", "/3bComp.jpeg", "/4bComp.jpeg", "/5bComp.jpeg","/6bComp.jpeg"]
   const ProjectTitles = ["Project1", "Project2", "Project3", "Project4", "Project5", "Project6"];
   return (
     <div className='CompareSliderSection'>
