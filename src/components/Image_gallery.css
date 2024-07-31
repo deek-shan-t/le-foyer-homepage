@@ -1,42 +1,45 @@
-#image_gallery_heading{
-    background-color: #b1825d;
-    color: white;
-   padding: 12px;
+#image_gallery_heading {
+  background-color: #b1825d;
+  color: white;
+  padding: 12px;
+  text-align: center;
 }
+
 .container {
-    display: flex;
-    justify-content: space-between;
-  }
-  #image_gallery_heading {
-    text-align: center;
-    margin: 20px 0;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Space out items evenly */
+  gap: 10px; /* Space between images */
+  padding: 10px;
+}
+
+.gallery-image {
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  width: calc(25% - 20px); /* Adjust width to make images smaller */
+  height: auto; /* Maintain aspect ratio */
   
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; /* Space out items evenly */
-    gap: 10px; /* Space between images */
-    padding: 10px;
-  }
+  margin: 12px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-image:hover {
+  transform: scale(1.03); /* Slightly reduce the scaling effect */
+  box-shadow: rgba(0, 0, 0, 0.35) 5px 10px 20px;
   
+}
+
+@media (max-width: 768px) {
   .gallery-image {
-    flex: 1 1 calc(33.333% - 20px); /* Adjust width for a 3-column layout with gap */
-    max-width: calc(33.333% - 20px); /* Ensure max width with gap */
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    width: calc(50% - 20px); /* Adjust width for a 2-column layout with gap */
+    
   }
-  
-  @media (max-width: 768px) {
-    .gallery-image {
-      flex: 1 1 calc(50% - 20px); /* Adjust width for a 2-column layout with gap */
-      max-width: calc(50% - 20px); /* Ensure max width with gap */
-    }
+}
+
+@media (max-width: 480px) {
+  .gallery-image {
+    width: calc(100% - 20px); /* Adjust width for a 1-column layout with gap */
+    
   }
-  
-  @media (max-width: 480px) {
-    .gallery-image {
-      flex: 1 1 calc(100% - 20px); /* Adjust width for a 1-column layout with gap */
-      max-width: calc(100% - 20px); /* Ensure max width with gap */
-    }
-  }
-  
+}
