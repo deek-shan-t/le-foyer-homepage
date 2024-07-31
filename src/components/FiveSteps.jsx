@@ -13,7 +13,6 @@ import step5 from '../assets/handover.png';
 
 const FiveSteps = () => {
     const stepsRef = useRef([]);
-
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
