@@ -22,11 +22,9 @@ const QuoteForm = () => {
 
   return (
     <div style={containerStyle}>
-     <div style={leftSectionStyle}>
-     
-     <img src="3.jpg" alt="Interior Design" style={imageStyle} />
-
-   </div>
+      <div style={imageContainerStyle}>
+        <img src="3.jpg" alt="Interior Design" style={imageStyle} />
+      </div>
       <div style={formContainerStyle}>
         <h2 style={titleStyle}>DESIGNS FOR<br />EVERY NEED</h2>
         <form onSubmit={handleSubmit}>
@@ -63,48 +61,29 @@ const QuoteForm = () => {
   );
 };
 
+// Styles
 const containerStyle = {
   display: 'flex',
-  maxWidth: '1200px',
+  flexDirection: 'row',
+  flexWrap: 'wrap',
+  maxWidth: 'full',
   margin: '0 auto',
   backgroundColor: '#f0e6d9',
   borderRadius: '20px',
   overflow: 'hidden',
 };
 
-const leftSectionStyle = {
-  flex: '2',
+const imageContainerStyle = {
+  flex: '1',
+  order: '1',
   padding: '40px',
-  color: '#8b6b4a',
+  textAlign: 'center',
   backgroundColor: '#e8d9c6',
-};
-
-const headingStyle = {
-  fontSize: '28px',
-  fontWeight: 'bold',
-  marginBottom: '20px',
-  lineHeight: '1.2',
-};
-
-const paragraphStyle = {
-  fontSize: '16px',
-  marginBottom: '20px',
-  lineHeight: '1.5',
-};
-
-const imageStyle = {
-  width: '100%',
-  height: 'auto',
-  marginBottom: '20px',
-  borderRadius: '10px',
-};
-
-const footerStyle = {
-  fontSize: '14px',
 };
 
 const formContainerStyle = {
   flex: '1',
+  order: '2',
   backgroundColor: '#fdf6ed',
   padding: '40px',
   display: 'flex',
@@ -130,7 +109,7 @@ const inputStyle = {
   borderBottom: '1px solid #e0d5c5',
   fontSize: '14px',
   color: '#8b6b4a',
-  borderRadius:'40px',
+  borderRadius: '40px',
 };
 
 const buttonStyle = {
@@ -146,5 +125,33 @@ const buttonStyle = {
   cursor: 'pointer',
   marginTop: '10px',
 };
+
+const imageStyle = {
+  maxWidth: '100%',
+  height: 'auto',
+  borderRadius: '10px',
+};
+
+/* Media Query for Responsive Design */
+const mediaQueryStyle = `
+@media (max-width: 991.98px) {
+  .container {
+    flex-direction: column;
+  }
+  .image-container {
+    order: 1;
+    padding: 20px;
+  }
+  .form-container {
+    order: 2;
+    padding: 20px;
+  }
+}
+`;
+
+// Add the media query to the document's style
+const styleElement = document.createElement('style');
+styleElement.textContent = mediaQueryStyle;
+document.head.append(styleElement);
 
 export default QuoteForm;
