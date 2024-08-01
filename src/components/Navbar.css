@@ -1,48 +1,142 @@
 /* Header.css */
 .header {
-    width: 100%;
-    position: relative;
-    background-color: #f7f1eb;
-  }
-  
-  .scroll-container {
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    background-color: #e1b098;
-    color: white;
-    padding: 10px 0;
-    position: relative;
-  }
-  
-  .scroll-text {
-    display: inline-block;
-    padding-left: 100%;
-    white-space: nowrap;
-  }
-  
+  width: 100%;
+  position: relative;
+  background-color: #f7f1eb;
+  display: block;
+}
+
+.scroll-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #e1b098;
+  color: white;
+  padding: 10px 0;
+  position: relative;
+}
+
+.scroll-text {
+  display: inline-block;
+  padding-left: 100%;
+  white-space: nowrap;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px; /* Adjust font size for better readability */
+}
+
+.talk-to-us {
+  background-color: #f5c19c;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Extra small devices (phones, < 576px) */
+@media (max-width: 575.98px) {
   .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
+
+  .logo img {
+    height: 40px; /* Reduce logo size */
+  }
+
+  nav a {
+    display: block;
+    margin: 5px 0;
+    font-size: 14px; /* Smaller font size for smaller screens */
+  }
+
+  .talk-to-us {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px; /* Full width button */
+    text-align: center; /* Center align the button */
+  }
+}
+
+/* Small devices (tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo img {
+    height: 45px; /* Adjust logo size */
+  }
+
+  nav a {
+    margin: 5px 0;
+    font-size: 15px; /* Slightly smaller font */
+  }
+
+  .talk-to-us {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px; /* Full width button */
+    text-align: center; /* Center align the button */
+  }
+}
+
+/* Medium devices (desktops, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+  }
+
   .logo img {
     height: 50px;
   }
-  
+
   nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #333;
+    font-size: 16px; /* Default font size */
   }
-  
+
   .talk-to-us {
-    background-color: #f5c19c;
-    border: none;
-    padding: 10px 20px;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
+    width: auto;
+    margin-top: 0; /* Reset button style */
   }
+}
+
+/* Large devices (large desktops, 992px and up) */
+@media (min-width: 992px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 50px;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+
+  .talk-to-us {
+    width: auto;
+  }
+}
