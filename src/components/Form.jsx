@@ -26,7 +26,7 @@ const QuoteForm = () => {
         <img src="3.jpg" alt="Interior Design" style={imageStyle} />
       </div>
       <div style={formContainerStyle}>
-        <h2 style={titleStyle}>DESIGNS FOR<br />EVERY NEED</h2>
+        <h2 style={titleStyle}>DESIGNS FOR EVERY NEED</h2>
         <form onSubmit={handleSubmit}>
           <input
             type="text"
