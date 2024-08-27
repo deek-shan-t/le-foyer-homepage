@@ -1,6 +1,6 @@
 /* Header.css */
 .header {
-  width: 100%;
+  width: 100vw;
   position: relative;
   background-color: #f7f1eb;
   display: block;
@@ -29,6 +29,10 @@
   padding: 10px 20px;
 }
 
+.navbar nav{
+  display: flex;
+}
+
 .logo img {
   height: 50px;
 }
@@ -54,20 +58,40 @@ nav a {
 /* Extra small devices (phones, < 576px) */
 @media (max-width: 575.98px) {
   .navbar {
+    width: 100vw;
     flex-direction: column;
     align-items: flex-start;
+    align-items: center;
   }
-
+  .MenuLogoButton{
+    display: block;
+    width: 10vw;
+    height: 10vw;
+  }
   .logo img {
     height: 40px; /* Reduce logo size */
   }
 
+  .navbar nav{
+    flex-direction: column;
+  }
   nav a {
     display: block;
     margin: 5px 0;
     font-size: 14px; /* Smaller font size for smaller screens */
   }
+  .navbar nav[wobble='1']{
+    animation: random 1s;
+  }
 
+  @keyframes random{
+    0% {
+      translate: -200px 0px;
+    }
+    100% {
+      translate: 0px 0px;
+    }
+  }
   .talk-to-us {
     width: 100%;
     padding: 10px;
@@ -82,7 +106,12 @@ nav a {
     flex-direction: column;
     align-items: flex-start;
   }
-
+  .navbar nav{
+    display: flex;
+  }
+  .MenuLogoButton{
+    display: none;
+  }
   .logo img {
     height: 45px; /* Adjust logo size */
   }
@@ -103,6 +132,7 @@ nav a {
 /* Medium devices (desktops, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .navbar {
+    display: flex;
     flex-direction: row;
     align-items: center;
   }
@@ -110,7 +140,14 @@ nav a {
   .logo img {
     height: 50px;
   }
-
+  .MenuLogoButton{
+    height: 10vw;
+  }
+  .MenuLogoButton{
+    display: none;
+    height: 10vw;
+    width: 10vw;
+  }
   nav a {
     font-size: 16px; /* Default font size */
   }
@@ -131,7 +168,9 @@ nav a {
   .logo img {
     height: 50px;
   }
-
+  .MenuLogoButton{
+    display: none;
+  }
   nav a {
     font-size: 16px;
   }
