@@ -5,7 +5,7 @@
   padding: 80px;
   background-color: #f5f5f5;
   font-family: Arial, sans-serif;
-  width: 100%;
+  width: 100vw;
   margin: 0 auto;
 }
 
@@ -14,6 +14,7 @@
   display: flex;
   margin-bottom: 30px;
   align-items: flex-start;
+  width: 100%;
 }
 
 .top-section .text-content,
@@ -53,6 +54,10 @@
   flex: 0 0 55%;
 }
 
+.topImage, .bottomImage{
+  border-radius: 10px;
+}
+
 .image-container img {
   width: 100%;
   height: auto;
@@ -84,6 +89,9 @@
     flex: 0 0 100%;
     margin-bottom: 20px; /* Adds space between image and text */
     order: 1; /* Ensures image comes before text */
+    width: 100vw;
+    padding: 10px;
+    
   }
 
   .bottom-section .image-container {
@@ -95,10 +103,10 @@
     font-size: 24px; /* Adjust font size for smaller screens */
   }
 
-  .top-section .text-content p,
+  .top-section .text-content div p,
   .bottom-section .text-content p {
     font-size: 14px; /* Smaller text for better readability */
-    max-width: 100%;
+    width: 100vw;
   }
 }
 
