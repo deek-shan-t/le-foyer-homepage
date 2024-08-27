@@ -1,0 +1,101 @@
+.ParentContainer{
+  display: flex;
+  flex-direction: row;
+  max-width: full;
+  margin: 0 auto;
+  background-color: #f0e6d9;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.sideImage{
+    flex: 1;
+    order: 1;
+    padding: 40px;
+    text-align: center;
+    background-color: #e8d9c6;
+}
+.FormContainer{
+    flex: 1;
+    order: 2;
+    background-color: #fdf6ed;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.FormTitle{
+    color: #8b6b4a;
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.HeroImage{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.inputfield{
+    display: block;
+    width: 100%;
+    padding: 15px 10px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #fdf6ed;
+    border-bottom: 1px solid #e0d5c5;
+    font-size: 14px;
+    color: #8b6b4a;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+.SubmitButton{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    background-color: #c69c6d;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+@media only screen and (max-width:576px){
+    .ParentContainer{
+        flex-direction: column;
+    }
+    .HeroImage{
+        width: 100vw;
+    }
+    .sideImage{
+        padding: 10px;
+    }
+    .inputfield{
+        display: block;
+        width: 100%;
+        padding: 15px 10px;
+        margin-bottom: 20px;
+        border: none;
+        background-color: #fdf6ed;
+        border-bottom: 1px solid #e0d5c5;
+        font-size: 14px;
+        color: #8b6b4a;
+        border-radius: 40px;
+        -webkit-border-radius: 40px;
+        -moz-border-radius: 40px;
+        -ms-border-radius: 40px;
+        -o-border-radius: 40px;
+}
+}
